@@ -5,15 +5,17 @@ import java.io.*;
 import java.util.*;
 
 class Queue {
-
+    private Stack<Integer> stack1;
+    private Stack<Integer> stack2;
 
     public Queue() {
-
+        stack1 = new Stack<Integer> ();
+        stack2 = new Stack<Integer> ();
     }
 
     // Push element x to the back of queue.
     public void enqueue(int x) {
-
+        stack1.push(x);
     }
 
     // Removes the element from in front of queue.
