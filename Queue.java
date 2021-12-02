@@ -13,7 +13,7 @@ class Queue {
         stack2 = new Stack<Integer> ();
     }
 
-    // Push element x to the back of queue.
+    // Push element x to the back of queue. // Time Complexity: O(1),  
     public void enqueue(int x) {
         stack1.push(x);
     }
