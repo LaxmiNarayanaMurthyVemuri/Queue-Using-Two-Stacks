@@ -13,7 +13,7 @@ class Queue {
         stack2 = new Stack<Integer> ();
     }
 
-    // Push element x to the back of queue. // Time Complexity: O(1),  
+    // Push element x to the back of queue. // Time Complexity: O(1),  space complexity: O(N)
     public void enqueue(int x) {
         stack1.push(x);
     }
@@ -24,9 +24,13 @@ class Queue {
         return stack2.pop();
     }
     
-    // Get the front element.
+    // Get the front element. // Time complexity: O(N). space complexity O(N)
     public int peek() {
-
+        if(!stack1.isEmpty()){
+            while(stack2.isEmpty());
+                stack2.push(stack1.pop());
+        }
+        return stack2.peek();
     }
     
     // Return whether the queue is empty.
