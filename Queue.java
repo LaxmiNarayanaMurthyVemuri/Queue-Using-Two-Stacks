@@ -26,7 +26,7 @@ class Queue {
     
     // Get the front element.
     public int peek() {
-        return 0;
+        return stack1.peek();
 
     }
     
