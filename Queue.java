@@ -18,8 +18,10 @@ class Queue {
 
     // Removes the element from in front of queue.
     public int dequeue() {
-        return 0;
-
+        while (stack1.size() != 0){ stack2.push(stack1.pop()); }
+        int item = stack2.pop();
+        while (stack2.size() != 0){  stack1.push(stack2.pop()); }
+        return item;
     }
     
     // Get the front element.
