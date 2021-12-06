@@ -4,6 +4,9 @@
 import java.util.*;
 
 class Queue {
+    // Creating 2 Stacks
+    private Stack<Integer> stack1 = new Stack<Integer>();
+    private Stack<Integer> stack2 = new Stack<Integer>();
 
 
     public Queue() {
